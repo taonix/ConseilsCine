@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-bg-color: #110303;
+    --fore-color: #AC2020;
+    --fore-secondary: #ECA61D;
+}
+
+body {
+    background-color: var(--main-bg-color);
+
+    font-family: Poppins, sans-serif;
+
+    margin: 0;
+}
+
+h1, h2, h4, p {
+    margin: 0;
+    font-weight: 500;
+}
+
+a {
+    color: #FEFEFE;
+    font-weight: 400;
+
+    text-decoration: none  !important;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(17, 3, 3, 0.5);
+    backdrop-filter: blur(100px);
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+nav img {
+    width: calc(1em + 4vw);
+    height: auto;
+}
+
+.A {
+    display: flex;
+
+    gap: 2vw;
+}
+
+nav a:hover {
+    color: var(--fore-secondary);
+}
+
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    gap: 3vw;
+
+    margin: 15vh 5vw;
+}
+
+.list img{
+    width: auto;
+    height: 55vh;
+}
+
+.list a:hover {
+    transition-duration: 0.4s;
+    transform: scale(1.1);
+}

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-bg-color: #110303;
+    --fore-color: #AC2020;
+    --fore-secondary: #ECA61D;
+}
+
+body {
+    background-color: var(--main-bg-color);
+
+    font-family: Poppins, sans-serif;
+
+    margin: 0;
+}
+
+h1, h2, h4, p {
+    margin: 0;
+    font-weight: 500;
+}
+
+a {
+    color: #FEFEFE;
+    font-weight: 400;
+
+    text-decoration: none  !important;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(17, 3, 3, 0.5);
+    backdrop-filter: blur(100px);
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+nav img {
+    width: calc(1em + 4vw);
+    height: auto;
+}
+
+.A {
+    display: flex;
+
+    gap: 2vw;
+}
+
+nav a:hover {
+    color: var(--fore-secondary);
+}
+
+.votre {
+    color: var(--fore-secondary);
+    font-weight: bold;
+}
+
+.title {
+    margin: 15% 3% 3% 3%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2vw;
+}
+
+.title1 {
+    display: flex;
+    gap: 10px;
+}
+
+.titleText {
+    display: flex;
+    flex-direction: column;
+
+    color: #FEFEFE;
+}
+
+.bluredBg {
+    position: absolute;
+    z-index: -1;
+
+    background-color: rgba(172, 32, 32, 0.5);
+    filter: blur(100px);
+
+    height: 10%;
+    width: 80%;
+}
+
+.buttonReco {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonRecoContent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: var(--fore-secondary);
+
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+
+#recoDuJour {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 25vh;
+    padding: 3vw;
+}
+
+#recoDuJour #title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    color: #FEFEFE;
+    font-weight: 500;
+}
+
+#recoDuJour #title p {
+    color: var(--fore-secondary);
+    font-size: 6em;
+    font-weight: bold;
+}
+
+.stopwatch {
+    position: absolute;
+    top: 90vh;
+    right: 5vw;
+    z-index: -1;
+}
+
+#filmReco {
+    display: flex;
+    align-content: center;
+
+    background-color: #1B1818;
+    border-radius: 20px;
+
+    padding: 2vw;
+    margin: 14vh 5vw;
+}
+
+#filmRecoContent{
+    display: flex;
+
+    color: #FEFEFE;
+}
+
+#filmRecoContent #filmHead {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#filmRecoContent #note {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    gap: 3vw;
+
+    margin: 15vh 5vw;
+}
+
+.list img{
+    width: 20vw;
+    height: auto;
+}
+
+.list a:hover {
+    transition-duration: 0.4s;
+    transform: scale(1.1);
+}
+
+#catalogue {
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+
+    background-color: #1B1818;
+    border-radius: 20px;
+
+    margin: 14vh 5vw;
+}
+
+#catalogue .titre {
+    align-self: center;
+    color: #FEFEFE;
+    margin-top: 5vh;
+}
